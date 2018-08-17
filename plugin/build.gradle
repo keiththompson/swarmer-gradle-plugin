@@ -1,0 +1,33 @@
+apply plugin: 'kotlin'
+apply plugin: 'java-gradle-plugin'
+apply plugin: 'com.gradle.plugin-publish'
+
+dependencies {
+  compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+}
+
+version = "0.1"
+group = "keith.thompson"
+
+gradlePlugin {
+  plugins {
+    swarmer {
+      id = "swarmer"
+      implementationClass = "swarmer.plugin.SwarmerPlugin"
+    }
+  }
+}
+
+pluginBundle {
+  website = 'https://github.com/keiththompson/swarmer-gradle-plugin'
+  vcsUrl = 'https://github.com/keiththompson/swarmer-gradle-plugin'
+  description = 'Plugin for Swarmer CLI tool by Juno'
+  tags = ['swarmer', 'gradle']
+
+  plugins {
+    swarmer {
+      // id is captured from java-gradle-plugin configuration
+      displayName = 'Swarmer plugin'
+    }
+  }
+}

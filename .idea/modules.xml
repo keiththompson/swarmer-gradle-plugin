@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/plugin.iml" filepath="$PROJECT_DIR$/.idea/modules/plugin.iml" group="plugin" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/plugin_main.iml" filepath="$PROJECT_DIR$/.idea/modules/plugin_main.iml" group="plugin" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/plugin_test.iml" filepath="$PROJECT_DIR$/.idea/modules/plugin_test.iml" group="plugin" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-531566406/swarmer-gradle-plugin.iml" filepath="$PROJECT_DIR$/.idea/modules/-531566406/swarmer-gradle-plugin.iml" />
+    </modules>
+  </component>
+</project>
